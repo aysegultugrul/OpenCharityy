@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -33,6 +33,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s;
+
 }
 
 .nav-item:first-child {
@@ -87,36 +88,54 @@ body {
     margin-top: 1vw;
 }
 
-.event-bar {
-    background-color: #e9f5fb;
-    padding: 2vw 0;
-    text-align: center;
-    border-top: 2px solid skyblue;
+.event-bar  {
+	position: relative;
+	width: 100%;
+	height: 10vw;
+	background-color: rgb(240,240,240);
+	z-index: 3;
+	padding-bottom: 1vw;
+}
+.event-info  {
+	position: relative;
+	width: 80%;
+	height: 4vw;
+	background-color: rgb(240,240,240);
+	margin:auto;
+	top:2vw;
+	line-height: 1.5vw;
+}
+.event-register  {
+	position: relative;
+	width: 12%;
+	float: right;
+	height: 3vw;
+	color:white;
+	background-color:skyblue;
+	font-size: 1.5vw;
+	top: 1vw;
+	text-align: center;
+	padding-bottom: 2.5vw;
+	line-height: 3vw;
+	box-shadow: 0 0 0.5vw teal inset,0 0 0.2vw black;
 }
 
-.event-register {
-    background-color: skyblue;
-    color: white;
-    padding: 1vw 3vw;
-    display: inline-block;
-    font-size: 1.5vw;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.event-details {
-    margin-top: 1vw;
-    font-size: 1.2vw;
+.event-details  {
+	position: relative;
+	width: 60%;
+	height: 4vw;
+	float: left;
+	background-color: rgb(240,240,240);
+	line-height: 1.5vw;	
 }
 
 .get-involved-section {
     display: flex;
     justify-content: space-around;
-    padding: 3vw 0;
+    padding: 6vw 4vw;
     background-color: white;
-    flex-wrap: wrap;
-    gap: 2vw;
+    flex-wrap: nowrap;
+    gap: 10vw;
 }
 
 .involvement-item {
@@ -162,7 +181,7 @@ body {
 
 .mission-section {
     background-color: #f4f4f4;
-    padding: 4vw 2vw;
+    padding: 10px;
     text-align: center;
 }
 
@@ -175,19 +194,19 @@ body {
 .mission-description, .mission-invite {
     font-size: 1.5vw;
     color: #555;
-    margin: 1vw 0;
+    margin: 7vw 0;
 }
 
 .mission-points {
     display: flex;
     justify-content: space-around;
     gap: 2vw;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .point-item {
     background: white;
-    padding: 2vw;
+    padding: 1vw;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     width: 30%;
@@ -195,7 +214,7 @@ body {
 }
 
 .point-icon {
-    width: 40%;
+    width: 30%;
     margin-bottom: 1vw;
     object-fit: cover;
 }
@@ -234,6 +253,18 @@ body {
 .member-logo:hover {
     transform: scale(1.1);
 }
+.dot-icon  {
+	position: relative;
+	width: 10%;
+	margin-left: 45%;
+	height: 1vw;
+	background-color: rgb(240,240,240);
+	text-align: center;
+	font-size: 9vw;
+	z-index: 4;
+	top: -10vw;
+    border-radius: 10px;
+}
 
 .blog-section {
     background-color: #fff;
@@ -250,23 +281,53 @@ body {
     max-width: 60%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 0;
+    width: 100%;
+    margin: auto;
+    padding: 6px;
+}
 
-.blog-title {
-    font-size: 1.5vw;
+.content-section {
+    position: relative;
+    width: 30%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 2vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 3vw; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section .skyblue-title {
     color: skyblue;
+    font-size: 1.6vw;
     font-weight: bold;
+    margin-bottom: 1.5vw;
 }
 
-.blog-description {
+
+.content-section .description {
+    font-size: 1.1vw;
+    color: rgb(120, 120, 120);
+    margin-bottom: 1.5vw;
+    border-top: 0.05vw groove rgba(0, 0, 50, 0.1);
+    border-bottom: 0.05vw groove rgba(0, 0, 50, 0.1);
+    padding: 2vw 0;
+}
+
+
+.content-section .date {
     font-size: 1.2vw;
-    color: #666;
-    margin: 0.5vw 0;
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+    text-align: left;
 }
 
-.blog-date {
-    font-size: 1vw;
-    color: gray;
-}
 
 footer {
     background-color: #333;
