@@ -3,7 +3,7 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color:white;
     color: #333;
 }
 
@@ -14,13 +14,15 @@ body {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    margin: 0 30px;
 }
 
 .navbar-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1vw 0;
+    position: relative;
+	width: 100%;
+	height: 6vw;
+	background-color: white;
+	z-index: 2;
 }
 
 .navbar-logo {
@@ -28,11 +30,17 @@ body {
 }
 
 .nav-item {
-    color: #333;
-    font-size: 1.2vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s;
+    position: relative;
+	width: 16%;
+	height: 3vw;
+	background-color: white;
+	float: right;
+	text-align: center;
+	line-height: 3vw;
+	font-size: 1vw;
+	font-weight: bold;
+	padding-bottom: 1.6vw;
+	transition: all 0.2s linear 0.1s;
 
 }
 
@@ -141,8 +149,6 @@ body {
 .involvement-item {
     background: #fff;
     padding: 2vw;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 30%;
 }
@@ -166,13 +172,18 @@ body {
 }
 
 .involvement-link p {
-    background-color: skyblue;
-    color: white;
-    padding: 0.5vw 1vw;
-    margin-top: 1vw;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    position: relative;
+	width: 40%;
+	height: 2.5vw;
+	background-color: white;
+	left: 30%;
+	border:2px groove skyblue;
+	color: skyblue;
+	text-align: center;
+	line-height: 2.5vw;
+	font-size: 1vw;
+	font-weight: bold;
+	transition: all 0.2s linear 0.1s;
 }
 
 .involvement-link p:hover {
@@ -238,9 +249,8 @@ body {
 
 .members-logos {
     display: flex;
-    justify-content: center;
-    gap: 2vw;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 50px;
 }
 
 .member-logo {
@@ -258,12 +268,11 @@ body {
 	width: 10%;
 	margin-left: 45%;
 	height: 1vw;
-	background-color: rgb(240,240,240);
 	text-align: center;
 	font-size: 9vw;
 	z-index: 4;
 	top: -10vw;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .blog-section {
@@ -290,15 +299,15 @@ body {
     margin: auto;
     padding: 6px;
 }
-
+.content-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
 .content-section {
     position: relative;
     width: 30%;
     background-color: white;
-    box-sizing: border-box;
     padding: 2vw;
-    border-radius: 0.5vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-bottom: 3vw; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -327,6 +336,20 @@ body {
     font-weight: bold;
     text-align: left;
 }
+.kaydirma-item  {
+	position: relative;
+	width: 5%;
+	height: 20vw;
+	background-color: white;
+	float: left;
+	margin-left: 1.42%;
+	text-align: center;
+	padding-top: 6.5vw;
+	font-size: 4vw;
+}
+.kaydirma-item:hover {
+	cursor: pointer;
+}
 
 
 footer {
@@ -334,6 +357,14 @@ footer {
     color: white;
     padding: 1vw 0;
     text-align: center;
+}
+.AG  {
+	position: relative;
+	width: 100%;
+	height: 10vw;
+	background-color: rgb(50,50,50);
+	text-align: center;
+	color: rgb(240,240,240);
 }
 
 .social-links a {
