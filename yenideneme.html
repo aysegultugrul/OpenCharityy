@@ -118,7 +118,8 @@
             </section>
             <div class="mission-points">
                 <div class="point-item">
-                    <img src="bulb-alt.png" alt="Bulb Icon" class="point-icon">
+                    <div class="icon-box"><img src="bulb-alt.png" alt="Bulb Icon" class="point-icon"></div>
+                    
                     <p>
                         <span class="point-title">We help charities</span><br>
                         <span class="point-text">Share knowledge and working practices to make the best technology
@@ -126,15 +127,16 @@
                     </p>
                 </div>
                 <div class="point-item">
-                    <img src="together-alt.png" alt="Together Icon" class="point-icon">
+                    <div class="icon-box"> <img src="together-alt.png" alt="Together Icon" class="point-icon"></div>
+                   
                     <p>
                         <span class="point-title">We bring together</span><br>
                         <span class="point-text">Charities and suppliers to share best practices.</span>
                     </p>
                 </div>
                 <div class="point-item">
-                    <img src="encourage-alt.png" alt="Encourage Icon" class="point-icon">
-                    <p>
+                    <div class="icon-box"><img src="encourage-alt.png" alt="Encourage Icon" class="point-icon"></div>
+                    <p >
                         <span class="point-title">We encourage</span><br>
                         <span class="point-text">Collaboration and innovation for the good of the charity sector.</span>
                     </p>
@@ -181,6 +183,13 @@
         </div>
 
     </main>
+    <div 
+      class="jquery" 
+      style="position: fixed;width: 3vw;height: 3vw;bottom: 3vw;right: 3vw;box-shadow: 0 0 0.1vw black inset,0 0 0.2vw grey, 0 0 0.3vw teal;border-radius: 0.3vw;z-index: 9;">
+        <a href="#navbar">
+          <img src="top.jpg" class="top top-style">
+        </a>
+      </div>
     <footer>
         <div class="social-links">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -192,6 +201,25 @@
                     Digital</span> and <span style="color: skyblue;">Compucorp</span></span></div>
         </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+    function welcome() {
+  alert("Welcome...");
+}
+    $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $('.jquery').fadeIn();
+        } else {
+            $('.jquery').fadeOut();
+        }
+    });
+    // $(".jquery").click(function () {
+    //     $("html, body").animate({ scrollTop: 0 }, 1000);
+    // });
+</script> 
 </body>
 
 </html>
